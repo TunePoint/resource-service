@@ -13,7 +13,7 @@ import ua.tunepoint.resource.model.response.AudioPostResponse;
 public interface AudioResourceEndpoint {
 
     @GetMapping("/audio/{id}")
-    ResponseEntity<AudioGetResponse> getAudio(@PathVariable String id);
+    ResponseEntity<AudioGetResponse> getAudio(@PathVariable("id") String id);
 
     @PostMapping("/audio")
     ResponseEntity<AudioPostResponse> postAudio(@RequestParam("content") MultipartFile content);
