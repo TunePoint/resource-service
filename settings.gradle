@@ -1,0 +1,5 @@
+rootProject.name = 'resource-service'
+
+include 'resource-service'
+include 'resource-model'
+include 'resource-api'

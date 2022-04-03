@@ -1,0 +1,16 @@
+plugins {
+    id 'java-library'
+    id 'maven-publish'
+}
+
+dependencies {
+    implementation 'ua.tunepoint:commons-web-model'
+    implementation 'org.hibernate.validator:hibernate-validator'
+
+    compileOnly 'org.projectlombok:lombok'
+    annotationProcessor 'org.projectlombok:lombok'
+}
+
+jar {
+    archiveName "${project.name}.jar"
+}

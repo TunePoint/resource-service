@@ -1,0 +1,15 @@
+plugins {
+    id 'java-library'
+    id 'maven-publish'
+}
+
+dependencies {
+
+    implementation project(':resource-model')
+
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+}
+
+jar {
+    archiveName "${project.name}.jar"
+}
