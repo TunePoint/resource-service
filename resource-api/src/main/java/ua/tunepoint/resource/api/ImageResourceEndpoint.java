@@ -5,14 +5,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
-import ua.tunepoint.resource.model.response.AudioGetResponse;
-import ua.tunepoint.resource.model.response.AudioPostResponse;
+import ua.tunepoint.resource.model.response.ImageGetResponse;
 
 public interface ImageResourceEndpoint {
 
     @GetMapping("/images/{id}")
-    ResponseEntity<AudioGetResponse> getAudio(String id);
+    ResponseEntity<ImageGetResponse> getImage(String id);
 
     @PostMapping("/images")
-    ResponseEntity<AudioPostResponse> postAudio(@RequestParam("content") MultipartFile content);
+    ResponseEntity<ImageGetResponse> postImage(@RequestParam("content") MultipartFile content);
 }
