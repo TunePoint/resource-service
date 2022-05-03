@@ -6,7 +6,7 @@ plugins {
 
 allprojects {
     group = 'ua.tunepoint'
-    version = '0.0.4'
+    version = '0.0.5'
 }
 
 subprojects {
@@ -61,7 +61,7 @@ subprojects {
 
             dependency 'ua.tunepoint:commons-web-model:0.0.3'
             dependency 'ua.tunepoint:commons-web-exception:0.0.3'
-            dependency 'ua.tunepoint:commons-security:0.0.2'
+            dependency 'ua.tunepoint:commons-security:0.0.3'
             dependency 'com.auth0:java-jwt:3.19.0'
         }
     }

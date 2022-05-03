@@ -30,7 +30,6 @@ public class AudioResourceService implements ResourceService<AudioResourcePayloa
     private final AudioConverter audioConverter;
 
     private final AudioMapper audioMapper;
-    private final ResourceMapper resourceMapper;
 
     @Override
     public AudioResourcePayload save(MultipartFile multipart) {

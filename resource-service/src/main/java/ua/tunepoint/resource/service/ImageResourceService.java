@@ -30,7 +30,6 @@ public class ImageResourceService implements ResourceService<ImageResourcePayloa
     private final StorageService storageService;
 
     private final ImageMapper imageMapper;
-    private final ResourceMapper resourceMapper;
 
     @Override
     public ImageResourcePayload save(MultipartFile multipart) {

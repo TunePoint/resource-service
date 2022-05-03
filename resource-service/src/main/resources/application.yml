@@ -3,26 +3,23 @@ spring:
     default-property-inclusion: non_null
   data:
     mongodb:
-      uri:
+      uri: ${MONGODB_URI}
   servlet:
     multipart:
-      max-file-size: 20MB
-      max-request-size: 20MB
+      max-file-size: ${MAX_FILE_SIZE:50MB}
+      max-request-size: ${MAX_REQUEST_SIZE:50MB}
   application:
     name: resource-service
 
 yandex:
-  key-id:
-  secret:
-  bucket-name:
-  host:
+  key-id: ${YANDEX_KEY_ID}
+  secret: ${YANDEX_SECRET}
+  bucket-name: ${YANDEX_BUCKET_NAME}
+  host: ${YANDEX_HOST}
 
 eureka:
   client:
     register-with-eureka: true
     fetch-registry: true
     service-url:
-      defaultZone:
-
-security:
-  secret:
+      defaultZone: ${EUREKA_URL:http://localhost:8765/eureka}
