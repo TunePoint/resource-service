@@ -15,7 +15,7 @@ import ua.tunepoint.resource.model.response.AudioPostResponse;
 import ua.tunepoint.resource.service.AudioResourceService;
 
 @RestController
-@RequestMapping("/audio")
+@RequestMapping("/resource/audio")
 @RequiredArgsConstructor
 public class AudioResourceController {
 

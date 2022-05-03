@@ -10,9 +10,9 @@ import ua.tunepoint.resource.model.response.ImageGetResponse;
 
 public interface ImageResourceEndpoint {
 
-    @GetMapping("/images/{id}")
+    @GetMapping("/resource/images/{id}")
     ResponseEntity<ImageGetResponse> getImage(@PathVariable("id") String id);
 
-    @PostMapping("/images")
+    @PostMapping("/resource/images")
     ResponseEntity<ImageGetResponse> postImage(@RequestParam("content") MultipartFile content);
 }

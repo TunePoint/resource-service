@@ -15,7 +15,7 @@ import ua.tunepoint.resource.model.response.ImagePostResponse;
 import ua.tunepoint.resource.service.ImageResourceService;
 
 @RestController
-@RequestMapping("/images")
+@RequestMapping("/resource/images")
 @RequiredArgsConstructor
 public class ImageResourceController {
 
